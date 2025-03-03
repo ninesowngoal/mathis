@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 10px;
+    //height: 5vh;
+    
+    .button {
+        background-color: #010101;
+        border: 2px solid #f9e3d7;
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: Merriweather, serif;
+        color:#f9e3d7;
+        padding: 8px 22px;
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: #f9e3d7;
+        color: black;
+    }
+}

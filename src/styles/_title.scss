@@ -2,10 +2,15 @@
 
 
 .titlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
     .title {
-        text-align: center;
         font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        font-size: 25px;
+        font-weight: 1000;
+        font-size: 80px;
+        color: #fff3ed;
     }
 }
