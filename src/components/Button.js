@@ -7,8 +7,7 @@ const Button = ({ text, to, className = '' }) => {
   return (
     <div className='buttoncontainer'>
       <button className={`button ${className}`} type='button' onClick={() => navigate(to)}>
-        {text}
-      </button>
+        {text}</button>
     </div>
   );
 };

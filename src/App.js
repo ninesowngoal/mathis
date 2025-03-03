@@ -3,6 +3,7 @@ import Anomaly from "./pages/Anomaly";
 import Title from "./components/Title";
 import Header from "./components/Header";
 import Button from "./components/Button";
+import Deficit from "./pages/Deficit";
 import "./styles/style.css";
 
 const Home = () => {
@@ -10,8 +11,9 @@ const Home = () => {
     <div>
       <Header />
       <Title className="Title" />
-      <div class="flex-container">
-        <div><Button text="Anomaly" to="/anomaly" /></div>
+      <div className="flex-container">  {/* FIXED class -> className */}
+        <Button text="Anomaly" to="/anomaly" />
+        <Button text="Stage Penalty" to="/deficit" />
       </div>
     </div>
   );
@@ -23,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/anomaly" element={<Anomaly />} />
+        <Route path="/deficit" element={<Deficit />} />
       </Routes>
     </Router>
   );

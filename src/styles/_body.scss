@@ -6,3 +6,6 @@ Body {
     background-repeat: no-repeat;
     height: 100vh;   
 }
+*,*::before,*::after{
+    box-sizing: border-box;
+}
