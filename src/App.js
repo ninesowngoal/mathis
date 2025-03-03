@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Header />
       <Title className="Title" />
-      <div className="flex-container">  {/* FIXED class -> className */}
+      <div className="flex-container">
         <Button text="Anomaly" to="/anomaly" />
         <Button text="Stage Penalty" to="/deficit" />
       </div>

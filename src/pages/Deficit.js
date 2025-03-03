@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const Deficit = () => {
   return (
-    <div>Coming soon.</div>
+    <div>
+      <header>
+        <Header />
+      </header>
+    </div>
   )
 }
 
