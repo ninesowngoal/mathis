@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 
 
-.titlecontainer {
+.homecontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
+    text-align: center;
 
     .title {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-weight: 1000;
-        font-size: 80px;
+        font-size: 60px;
         color: #fff3ed;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import TextLink from './TextLink';
 
 const Header = () => {
   return (
@@ -8,8 +9,8 @@ const Header = () => {
         <Logo />
       </header>
       <menu className="textcontainer">
-        <p>How To Use</p>
-        <p>About</p>
+        <TextLink text='HOW TO USE' to='./usage' />
+        <TextLink text='ABOUT' to='./about' />
       </menu>
     </div>
   );
