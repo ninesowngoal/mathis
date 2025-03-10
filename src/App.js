@@ -6,10 +6,11 @@ import Deficit from "./pages/Deficit";
 import "./styles/style.css";
 import About from "./pages/About";
 import Usage from "./pages/Usage";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <div className="homecontainer">
         <div className="title">
@@ -20,6 +21,9 @@ const Home = () => {
           </menu>
         </div>
       </div>
+        <footer>
+          <Footer />
+        </footer>
     </div>
   );
 };

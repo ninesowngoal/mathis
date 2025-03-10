@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2222;
+    margin-top: auto;
+
+    .copyright {
+        display: inherit;
+        text-align: center;
+        justify-content: center;
+        color: #fff3ed;
+    }
+}
