@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Anomaly = () => {
   return (
@@ -7,6 +8,9 @@ const Anomaly = () => {
       <header>
         <Header />
       </header>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }

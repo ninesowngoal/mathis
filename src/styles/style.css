@@ -46,6 +46,17 @@ Body {
   flex-grow: 1;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 1000;
+  font-size: 90px;
+  color: #fff3ed;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  filter: drop-shadow(black 5px 5px);
+}
+
 .buttoncontainer {
   display: inline-flex;
   justify-content: center;
@@ -114,4 +125,23 @@ footer .copyright {
   text-align: center;
   justify-content: center;
   color: #fff3ed;
+}
+
+.main-content {
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.about-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #fff3ed;
+  text-align: center;
+  z-index: 6;
+}
+
+.about-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
