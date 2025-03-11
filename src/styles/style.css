@@ -133,8 +133,11 @@ footer .copyright {
 }
 
 .about-text {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  word-spacing: 2px;
   color: #fff3ed;
   text-align: center;
   z-index: 6;

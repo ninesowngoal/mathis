@@ -9,8 +9,8 @@ const Header = () => {
         <Logo />
       </header>
       <menu className="textcontainer">
-        <TextLink text='HOW TO USE' to='./usage' />
-        <TextLink text='ABOUT' to='./about' />
+        <TextLink text='HOW TO USE' Link to='/usage' />
+        <TextLink text='ABOUT' Link to='/about' />
       </menu>
     </div>
   );
