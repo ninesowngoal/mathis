@@ -165,52 +165,52 @@ footer .copyright {
 
 .card-image {
   display: inherit;
-  width: 100%; /* Adjust as needed */
+  width: 100%;
 }
 
 .add-button-1 {
   position: absolute;
-  top: 92%; /* Adjust positioning */
+  top: 92%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centers the button */
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 .add-button-2 {
   position: absolute;
-  top: 92%; /* Adjust positioning */
+  top: 92%;
   left: 59%;
-  transform: translate(-50%, -50%); /* Centers the button */
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 .add-button-3 {
   position: absolute;
-  top: 92%; /* Adjust positioning */
+  top: 92%;
   left: 68%;
-  transform: translate(-50%, -50%); /* Centers the button */
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 .add-button-4 {
   position: absolute;
-  top: 92%; /* Adjust positioning */
+  top: 92%;
   left: 77%;
-  transform: translate(-50%, -50%); /* Centers the button */
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 .add-button-5 {
   position: absolute;
-  top: 92%; /* Adjust positioning */
+  top: 92%;
   left: 86%;
-  transform: translate(-50%, -50%); /* Centers the button */
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 .damage-text {
   position: absolute;
-  display: inline-flex;
+  display: inl;
   top: 30.5%;
   left: 47.5%;
   text-align: center;
@@ -233,16 +233,14 @@ select {
   margin-bottom: 10px;
 }
 
-/* Center the box in the middle of the page */
 .deficit-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 100vh;
+  width: 100vw;
 }
 
-/* Styling for the Deficit Box */
 .deficit-container {
   width: 320px;
   padding: 20px;
@@ -252,7 +250,6 @@ select {
   text-align: center;
 }
 
-/* Input styling */
 .input-group {
   margin-bottom: 15px;
   display: flex;
@@ -274,7 +271,6 @@ input {
   text-align: center;
 }
 
-/* Result box */
 .result-box {
   margin-top: 15px;
   padding: 10px;

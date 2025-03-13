@@ -1,3 +1,10 @@
+# Website Description
+
+This website I created - Mathis - is a tool for those who play a certain game to use. As is outlined in my "About" and "How to Use" pages.\
+The two pages - Anomaly and Stage Penalty - are calculators that when given input by the user, will calculate certain things for them.\
+Currently, only the Stage Penalty is functional, the Anomaly page is finished but the calculation will be handled by the backend.
+
+# Installation
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
