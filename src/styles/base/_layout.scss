@@ -1,0 +1,132 @@
+// Scaling for phone and desktop devices.
+$breakpoints: (
+    smob: 320px,
+    lmob: 480px,
+    ptab: 768px,
+    ltab: 1024px,
+    desk: 1280px,
+    lscreen: 1440px,
+    ultra: 1920px,
+    ) !default;
+
+@mixin media($min, $max: false, $min-operator: '>=', $max-operator: '<') {
+    $min-query: '';
+    $max-query: '';
+  
+    @if $min-operator == '>=' {
+      $min-query: '(min-width: #{$min})';
+    } @else if $min-operator == '>' {
+      $min-query: '(min-width: #{$min + 1px})';
+    }
+  
+    @if $max {
+      @if $max-operator == '<=' {
+        $max-query: '(max-width: #{$max})';
+      } @else if $max-operator == '<' {
+        $max-query: '(max-width: #{$max - 1px})';
+      }
+    }
+  
+    @if $max {
+      @media #{$min-query} and #{$max-query} {
+        @content;
+      }
+    } @else {
+      @media #{$min-query} {
+        @content;
+      }
+    }
+  }
+  
+  
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    // gap: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    }
+
+    @include media(map-get($breakpoints, smob), map-get($breakpoints, lmob), '>=', '<'){
+        .container {
+            width: 100%;
+        }
+    }
+
+    @include media(map-get($breakpoints, lmob), map-get($breakpoints, ptab), '>=', '<'){
+        .container {
+            width: 100%;
+        }
+    }
+
+    @include media(map-get($breakpoints, ptab), map-get($breakpoints, ltab), '>=', '<'){
+        .container {
+            width: 90%;
+        }
+    }
+
+    @include media(map-get($breakpoints, ltab), map-get($breakpoints, desk), '>=', '<'){
+        .container {
+            width: 90%;
+        }
+    }
+
+    @include media(map-get($breakpoints, desk), map-get($breakpoints, lscreen), '>=', '<'){
+        .container {
+            width: 80%;
+        }
+    }
+
+    @include media(map-get($breakpoints, lscreen), map-get($breakpoints, ultra), '>=', '<'){
+        .container {
+            width: 80%;
+        }
+    }
+
+    @include media(map-get($breakpoints, ultra), false, '>='){
+        .container {
+            width: 70%;
+        }
+    }
+
+Body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    Background-color: #3C3030; 
+    background-image: url('/public/images/bg.png');
+    background-size: cover;
+    background-position: flex;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+*,*::before,*::after{
+      box-sizing: border-box;
+  }
+  
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+h2 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 1000;
+    font-size: 90px;
+    color: #fff3ed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    filter: drop-shadow(black 5px 5px)
+  }
+  
+label {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    color: #fff3ed;
+}

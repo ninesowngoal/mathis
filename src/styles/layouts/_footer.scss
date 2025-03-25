@@ -1,0 +1,21 @@
+@use '../base/colours' as c;
+@use '../base/typography' as t;
+
+footer {
+    display: inline-flex;
+    grid-column: 1;
+    flex-direction: column;
+    // position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: c.$secondary-colour;
+    width: 100vw;
+    margin-top: auto;
+    padding: 0;
+
+    .copyright {
+        text-align: center;
+        justify-content: center;
+        color: t.$ptext-colour;
+    }
+}

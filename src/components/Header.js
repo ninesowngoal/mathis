@@ -4,11 +4,11 @@ import TextLink from './TextLink';
 
 const Header = () => {
   return (
-    <div className="barcontainer">
-      <header className="logocontainer">
+    <div className="head-container">
+      <header className="logo">
         <Logo />
       </header>
-      <menu className="textcontainer">
+      <menu className='page-title'>
         <TextLink text='HOW TO USE' Link to='/usage' />
         <TextLink text='ABOUT' Link to='/about' />
       </menu>

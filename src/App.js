@@ -15,7 +15,7 @@ const Home = () => {
       <div className="homecontainer">
         <div className="title">
           <h1 style={{marginBottom:0}}>CALCULATE YOUR<br/>WAY TO VICTORY.</h1>
-          <menu className="buttoncontainer" style={{marginTop:0, paddingLeft:0}}>
+          <menu className="button-container" style={{marginTop:0, paddingLeft:0}}>
             <Button text="Anomaly" Link to="/anomaly" />
             <Button text="Stage Penalty" Link to="/deficit" />
           </menu>

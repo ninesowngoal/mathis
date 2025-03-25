@@ -1,0 +1,27 @@
+@use '../base/colours' as c;
+@use '../base/typography' as t;
+
+.button-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+    .button {
+        background-color: black;
+        border: 2px solid c.$tertiary-colour;
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: map-get($fonts, tertiary), map-get($fonts, type-ser);
+        color: t.$stext-colour;
+        padding: 8px 22px;
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: c.$tertiary-colour;
+        color: black;
+    }
+}

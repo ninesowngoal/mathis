@@ -1,0 +1,35 @@
+@use '../base/typography' as t;
+@use '../base/colours' as c;
+
+.head-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    justify-content: space-between;
+    background-color: c.$primary-colour;
+    width: 100vw;
+    top: 0;
+    z-index: 6;
+
+    .logo {
+        grid: 1;
+        text-decoration: underline;
+        img:hover{
+            border-bottom: 2px white;
+        }
+    }
+
+    .page-title {
+        grid: 3;
+        display: flex;
+        font-family: map-get($fonts, primary), map-get($fonts, type-san);
+        gap: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        color: $ptext-colour;
+
+        .text:hover{
+            text-decoration: underline;
+        }
+    }
+}
